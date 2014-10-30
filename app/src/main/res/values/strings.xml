@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CheckMyDevice2_성주용</string>
+    <string name="view_test">화면 테스트</string>
+    <string name="noti_test">알림 테스트</string>
+    <string name="gps_test">GPS 테스트</string>
+    <string name="camera_test">카메라 테스트</string>
+    <string name="sensor_test">센서 테스트</string>
+    <string name="dev_info">개발자 정보</string>
+    <string name="pixel_test">불량화소 테스트</string>
+    <string name="multi_touch_test">멀티터치 테스트</string>
+    <string name="sound_test">사운드 테스트</string>
+    <string name="vibrate_test">진동 테스트</string>
+</resources>
