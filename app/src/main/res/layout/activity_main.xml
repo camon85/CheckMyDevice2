@@ -6,6 +6,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/btn_view_test"
         android:text="@string/view_test"
         android:gravity="center"
         android:background="@color/material_blue_grey_950"
@@ -13,6 +14,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <TextView
+        android:id="@+id/btn_noti_test"
         android:text="@string/noti_test"
         android:gravity="center"
         android:layout_gravity="right"
@@ -21,6 +23,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <TextView
+        android:id="@+id/btn_gps_test"
         android:text="@string/gps_test"
         android:gravity="center"
         android:background="@color/material_blue_grey_950"
@@ -28,6 +31,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <TextView
+        android:id="@+id/btn_camera_test"
         android:text="@string/camera_test"
         android:gravity="center"
         android:layout_gravity="right"
@@ -36,6 +40,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <TextView
+        android:id="@+id/btn_sensor_test"
         android:text="@string/sensor_test"
         android:gravity="center"
         android:background="@color/material_blue_grey_950"
@@ -43,6 +48,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <TextView
+        android:id="@+id/btn_dev_info"
         android:text="@string/dev_info"
         android:gravity="center"
         android:layout_gravity="right"

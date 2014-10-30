@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -13,14 +12,16 @@
         android:layout_weight="1.5"/>
 
     <TextView
-        android:text="@string/pixel_test"
+        android:id="@+id/btn_sound_test"
+        android:text="@string/sound_test"
         android:gravity="center"
         android:background="@color/material_blue_grey_950"
         android:layout_width="200dp"
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <TextView
-        android:text="@string/multi_touch_test"
+        android:id="@+id/btn_vibrate_test"
+        android:text="@string/vibrate_test"
         android:gravity="center"
         android:layout_gravity="right"
         android:background="#003300"

@@ -13,6 +13,7 @@
         android:layout_weight="1.5"/>
 
     <TextView
+        android:id="@+id/btn_pixel_test"
         android:text="@string/pixel_test"
         android:gravity="center"
         android:background="@color/material_blue_grey_950"
@@ -20,6 +21,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <TextView
+        android:id="@+id/btn_multi_touch_test"
         android:text="@string/multi_touch_test"
         android:gravity="center"
         android:layout_gravity="right"
