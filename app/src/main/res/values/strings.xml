@@ -23,5 +23,6 @@
     <string name="title_activity_sensor_test">SensorTestActivity</string>
     <string name="title_activity_multi_touch">MultiTouchActivity</string>
     <string name="title_activity_pixel_test">PixelTestActivity</string>
+    <string name="title_activity_sound_test">SoundTestActivity</string>
 
 </resources>

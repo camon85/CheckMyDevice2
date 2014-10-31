@@ -66,25 +66,23 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void goActivity(int id) {
-        Intent intent = null;
-
         if (R.id.btn_view_test == id) {
-            intent = new Intent(this, SubViewActivity.class);
+            Intent intent = new Intent(this, SubViewActivity.class);
             startActivity(intent);
         } else if (R.id.btn_noti_test == id) {
-            intent = new Intent(this, SubNotiActivity.class);
+            Intent intent = new Intent(this, SubNotiActivity.class);
             startActivity(intent);
         } else if (R.id.btn_gps_test == id) {
-//            intent = new Intent(this, SubViewActivity.class);
+//            Intent intent = new Intent(this, SubViewActivity.class);
 //            startActivity(intent);
         } else if (R.id.btn_camera_test == id) {
-//            intent = new Intent(this, SubViewActivity.class);
+//            Intent intent = new Intent(this, SubViewActivity.class);
 //            startActivity(intent);
         } else if (R.id.btn_sensor_test == id) {
-            intent = new Intent(this, SensorTestActivity.class);
+            Intent intent = new Intent(this, SensorTestActivity.class);
             startActivity(intent);
         } else if (R.id.btn_dev_info == id) {
-            intent = new Intent(this, DevInfoActivity.class);
+            Intent intent = new Intent(this, DevInfoActivity.class);
             startActivity(intent);
         } else {
             throw new IllegalStateException();

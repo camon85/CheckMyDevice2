@@ -32,13 +32,11 @@ public class SubViewActivity extends Activity implements View.OnClickListener {
     }
 
     private void goActivity(int id) {
-        Intent intent = null;
-
         if (R.id.btn_pixel_test == id) {
-            intent = new Intent(this, PixelTestActivity.class);
+            Intent intent = new Intent(this, PixelTestActivity.class);
             startActivity(intent);
         } else if (R.id.btn_multi_touch_test == id) {
-            intent = new Intent(this, MultiTouchActivity.class);
+            Intent intent = new Intent(this, MultiTouchActivity.class);
             startActivity(intent);
         } else {
             throw new IllegalStateException();
