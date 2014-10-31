@@ -3,10 +3,8 @@ package com.accenture.jooyongsung.app;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -64,24 +62,34 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         int id = v.getId();
 
-        if(R.id.btn_view_test == id) {
-//            Intent intent = new Intent(this, Pi/*xelActivity.class);
-//            startActivity(intent);*/
+        goActivity(id);
+    }
+
+    private void goActivity(int id) {
+        Intent intent = null;
+
+        if (R.id.btn_view_test == id) {
+            intent = new Intent(this, SubViewActivity.class);
+            startActivity(intent);
         } else if (R.id.btn_noti_test == id) {
-//            Intent intent = new Intent(this, Pi/*xelActivity.class);
-//            startActivity(intent);*/
+            intent = new Intent(this, SubNotiActivity.class);
+            startActivity(intent);
         } else if (R.id.btn_gps_test == id) {
-//            Intent intent = new Intent(this, Pi/*xelActivity.class);
-//            startActivity(intent);*/
+//            intent = new Intent(this, SubViewActivity.class);
+//            startActivity(intent);
         } else if (R.id.btn_camera_test == id) {
-//            Intent intent = new Intent(this, Pi/*xelActivity.class);
-//            startActivity(intent);*/
+//            intent = new Intent(this, SubViewActivity.class);
+//            startActivity(intent);
         } else if (R.id.btn_sensor_test == id) {
-//            Intent intent = new Intent(this, Pi/*xelActivity.class);
-//            startActivity(intent);*/
+            intent = new Intent(this, SensorTestActivity.class);
+            startActivity(intent);
         } else if (R.id.btn_dev_info == id) {
-//            Intent intent = new Intent(this, Pi/*xelActivity.class);
-//            startActivity(intent);*/
+            intent = new Intent(this, DevInfoActivity.class);
+            startActivity(intent);
+        } else {
+            throw new IllegalStateException();
         }
+
+
     }
 }

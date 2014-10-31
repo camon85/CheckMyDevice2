@@ -23,6 +23,22 @@
             android:name=".SubNotiActivity"
             android:label="@string/title_activity_sub_noti" >
         </activity>
+        <activity
+            android:name=".DevInfoActivity"
+            android:label="@string/title_activity_dev_info" >
+        </activity>
+        <activity
+            android:name=".SensorTestActivity"
+            android:label="@string/title_activity_sensor_test" >
+        </activity>
+        <activity
+            android:name=".MultiTouchActivity"
+            android:label="@string/title_activity_multi_touch" >
+        </activity>
+        <activity
+            android:name=".PixelTestActivity"
+            android:label="@string/title_activity_pixel_test" >
+        </activity>
     </application>
 
 </manifest>

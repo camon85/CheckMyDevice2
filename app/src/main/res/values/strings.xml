@@ -19,5 +19,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_sub_noti">SubNotiActivity</string>
+    <string name="title_activity_dev_info">DevInfoActivity</string>
+    <string name="title_activity_sensor_test">SensorTestActivity</string>
+    <string name="title_activity_multi_touch">MultiTouchActivity</string>
+    <string name="title_activity_pixel_test">PixelTestActivity</string>
 
 </resources>
