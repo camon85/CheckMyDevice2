@@ -76,8 +76,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 //            Intent intent = new Intent(this, SubViewActivity.class);
 //            startActivity(intent);
         } else if (R.id.btn_camera_test == id) {
-//            Intent intent = new Intent(this, SubViewActivity.class);
-//            startActivity(intent);
+            Intent intent = new Intent(this, CameraTestActivity.class);
+            startActivity(intent);
         } else if (R.id.btn_sensor_test == id) {
             Intent intent = new Intent(this, SensorTestActivity.class);
             startActivity(intent);

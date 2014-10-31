@@ -24,5 +24,9 @@
     <string name="title_activity_multi_touch">MultiTouchActivity</string>
     <string name="title_activity_pixel_test">PixelTestActivity</string>
     <string name="title_activity_sound_test">SoundTestActivity</string>
+    <string name="title_activity_camera_test">CameraTestActivity</string>
 
+    <!-- Toast Messages -->
+    <string name="camera_not_found">No camera harware found</string>
+    <string name="take_photo_help">Touch anywhere on screen to take picture</string>
 </resources>
