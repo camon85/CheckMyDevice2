@@ -17,42 +17,44 @@
         </activity>
         <activity
             android:name=".SubViewActivity"
-            android:label="@string/title_activity_sub_view" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".SubNotiActivity"
-            android:label="@string/title_activity_sub_noti" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".DevInfoActivity"
-            android:label="@string/title_activity_dev_info" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".SensorTestActivity"
-            android:label="@string/title_activity_sensor_test" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".MultiTouchActivity"
-            android:label="@string/title_activity_multi_touch" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".PixelTestActivity"
-            android:label="@string/title_activity_pixel_test" >
-        </activity>
-        <activity
-            android:name=".SoundTestActivity"
-            android:label="@string/title_activity_sound_test" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".CameraTestActivity"
-            android:label="@string/title_activity_camera_test"
-            android:screenOrientation="landscape">
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".AudioPlayerActivity"
+            android:label="@string/app_name" >
         </activity>
     </application>
 
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+
 </manifest>

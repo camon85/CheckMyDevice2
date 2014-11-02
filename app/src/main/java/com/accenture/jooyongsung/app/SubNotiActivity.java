@@ -35,7 +35,7 @@ public class SubNotiActivity extends Activity implements View.OnClickListener {
 
     private void goActivity(int id) {
         if (R.id.btn_sound_test == id) {
-            Intent intent = new Intent(this, SoundTestActivity.class);
+            Intent intent = new Intent(this, AudioPlayerActivity.class);
             startActivity(intent);
         } else if (R.id.btn_vibrate_test == id) {
             Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
