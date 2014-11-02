@@ -73,8 +73,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
             Intent intent = new Intent(this, SubNotiActivity.class);
             startActivity(intent);
         } else if (R.id.btn_gps_test == id) {
-//            Intent intent = new Intent(this, SubViewActivity.class);
-//            startActivity(intent);
+            Intent intent = new Intent(this, GoogleMapTestActivity.class);
+            startActivity(intent);
         } else if (R.id.btn_camera_test == id) {
             Intent intent = new Intent(this, CameraTestActivity.class);
             startActivity(intent);

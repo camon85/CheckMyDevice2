@@ -21,5 +21,6 @@
     <string name="camera_not_found">No camera harware found</string>
     <string name="take_photo_help">Touch anywhere on screen to take picture</string>
     <string name="title_activity_audio_player">AudioPlayerActivity</string>
+    <string name="title_activity_google_map_test">Map</string>
 
 </resources>
