@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
@@ -77,6 +76,8 @@ public class AudioPlayerActivity extends Activity implements MediaPlayer.OnCompl
 
         // Getting all songs list
         songsList = songManager.getPlayList();
+
+        songTitleLabel.setText("file path : " + AudioPlayerManager.MEDIA_PATH);
     }
 
     @Override
