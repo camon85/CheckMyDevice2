@@ -1,14 +1,15 @@
 package com.accenture.jooyongsung.app;
 
-import android.support.v4.app.FragmentActivity;
+import android.location.Location;
 import android.os.Bundle;
-
+import android.support.v4.app.FragmentActivity;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class GoogleMapTestActivity extends FragmentActivity {
+public class GoogleMapTestActivity extends FragmentActivity implements GoogleMap.OnMyLocationChangeListener {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
 
@@ -60,6 +61,18 @@ public class GoogleMapTestActivity extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("You!!"));
+        mMap.setMyLocationEnabled(true);
+        mMap.setOnMyLocationChangeListener(this);
+    }
+
+    @Override
+    public void onMyLocationChange(Location location) {
+        double latitude = location.getLatitude();  // 현재 위도
+        double longitude = location.getLongitude(); // 현재 경도
+        LatLng latLng = new LatLng(latitude, longitude);
+
+        // 현재 위치로 구글맵 이동
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
     }
 }
