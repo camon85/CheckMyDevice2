@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class AudioPlayerActivity extends Activity implements MediaPlayer.OnCompletionListener,
         SeekBar.OnSeekBarChangeListener, View.OnClickListener {
-    private final String TAG = "AudioPlayerActivity";
+//    private final String TAG = "AudioPlayerActivity";
     private ImageButton btnPlay;
     private ImageButton btnForward;
     private ImageButton btnBackward;
@@ -119,6 +120,11 @@ public class AudioPlayerActivity extends Activity implements MediaPlayer.OnCompl
 
     @Override
     public void onClick(View view) {
+        if (songsList.size() == 0) {
+            Toast.makeText(this, AudioPlayerManager.MEDIA_PATH + "경로에 mp3파일을 넣어주세요.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         int id = view.getId();
 
         if (R.id.btnPlay == id) {
@@ -207,6 +213,8 @@ public class AudioPlayerActivity extends Activity implements MediaPlayer.OnCompl
         } catch (IllegalStateException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (IndexOutOfBoundsException e) {
             e.printStackTrace();
         }
     }
